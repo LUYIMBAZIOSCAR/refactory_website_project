@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1f44;
+    padding: 15px 30px;
+    color: white;
+
+    /*Sticky logic*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+}
+.logo{
+    font-size: 10px;
+    font-weight: bold;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-links a:hover{
+    color: #00bfff;
+}
