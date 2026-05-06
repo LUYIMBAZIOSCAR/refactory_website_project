@@ -34,6 +34,7 @@ body{
     text-decoration: none;
     color: white;
     font-size: 16px;
+    font-weight: bold;
 }
 .nav-links a:hover{
     color: #00bfff;
@@ -46,7 +47,13 @@ body{
     align-items: center;
     text-align: center;
     overflow: hidden;
-    /* color: white; */
+    color: white; 
+    /*Standardize background behavior so JS only needs to change the URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*  Smooth fade between images */
+    transition: background-image 1s ease-in-out;
 }
 .hero::before{
     content: "";
@@ -55,18 +62,18 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(10, 31, 68, 0.6);
+    background: rgba(10, 31, 68, 0.4);
 }
 .hero-content{
     position: relative;
     z-index: 2;
 }
-.hero-content h1{
-    font-size: 50px;
+.hero-content h2{
+    font-size: 40px;
     margin-bottom: 15px;
 }
 .hero-content h4{
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 30px;
 }
 .hero-buttons{
@@ -76,9 +83,17 @@ body{
 }
 .btn{
     padding: 12px 20px;
-    background-color:#0a1f44;
+    background-color:#C6C628;
     border-radius: 5px;
     cursor: pointer;
     color: white;
     border: none;
+    font-size: 15px;
+
+}
+.primary{
+    background-color: #663367;
+}
+.white{
+    background: white;
 }
