@@ -5,10 +5,12 @@ const hero=document.querySelector('.hero')
 
 // defining the local paths to the images
 const images=[
-    "images/image1.jpeg",
-    "images/image2.jpeg",
-    "images/image3.jpg",
+
+    "images/image5.jpg",
+    "images/image6.jpeg",
     "images/image4.jpeg",
+    "images/image8.jpeg",
+    
 ]
 
 let index=0
@@ -23,4 +25,13 @@ function changeBackground(){
 // change background every 4 seconds
 setInterval(changeBackground,4000)
 changeBackground()
+
+/* hamburger menu */
+const hamburger=document.querySelector('.hamburger');
+const navLinks=document.querySelector('.nav-links')
+
+hamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('active')
+
+})
 
