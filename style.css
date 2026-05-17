@@ -4,6 +4,7 @@
     --accent-color:#38BFC3;
     --dark-color:#0a1f44;
     --background-color:#f7f9fc;
+    --heading-color:#0F5395;
 }
 
 body{
@@ -95,6 +96,18 @@ body{
     
     /*  Smooth fade between images */
     transition: background-image 1s ease-in-out;
+}
+.courses-hero{
+    height: 80vh;
+    background-image: url('images/image11.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.courses-cont h2{
+    text-align: left;
 }
 .hero::before{
     content: "";
@@ -201,9 +214,14 @@ body{
 /* =========================
    PROGRAMS SECTION
 ========================= */
+.courses{
+    margin-top: 5px;
+    padding: 5px 8%;
+    background-color:white;
+}
 
 .programs-section {
-    padding: 30px 8%;
+    padding: 10px 8%;
     background-color:white;
 }
 
@@ -226,6 +244,11 @@ body{
     font-size: 30px;
     color: var(--primary-color);
     font-weight: 600;
+}
+.section-title h4{
+    text-align: left;
+    color: var(--heading-color);
+    font-size: 26px;
 }
 
 /* =========================
