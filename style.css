@@ -224,6 +224,10 @@ body{
     padding: 10px 8%;
     background-color:white;
 }
+.advanced{
+    background-color: var(--dark-color);
+}
+
 
 /* =========================
    SECTION TITLE
@@ -267,6 +271,7 @@ body{
    INDIVIDUAL CARD
 ========================= */
 
+
 .program-card {
     display: flex;
     flex-direction: column;
@@ -274,6 +279,7 @@ body{
     overflow: hidden;
     transition: all 0.3s ease;
 }
+
 
 /* Hover Animation */
 
