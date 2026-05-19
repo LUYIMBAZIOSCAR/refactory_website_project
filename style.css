@@ -26,8 +26,96 @@ body{
     width: 90%;
     background: transparent;
     z-index: 1000;
+}
+/* =========================
+   DROPDOWN
+========================= */
 
+.dropdown {
+    position: relative;
+}
 
+/* Dropdown Toggle */
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap:2px;
+    cursor: pointer;
+    font-weight: 500;
+    color:white;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1;
+}
+.dropdown-toggle:hover{
+    color: var(--accent-color);
+
+}
+.dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+/* Unstyled Button specifically for the arrow click */
+.arrow-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Rotate Arrow (Ensure display inline-block so transform works) */
+.arrow {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* =========================
+   DROPDOWN MENU
+========================= */
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 260px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    padding: 15px 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+/* Show Menu */
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* Dropdown Links */
+.dropdown-menu li a {
+    display: block;
+    padding: 14px 22px;
+    color: #0a1f44;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+/* Hover Effect */
+.dropdown-menu li a:hover {
+    background: #f4f8ff;
+    color: #00bfff;
 }
 .logo{
     font-size: 10px;
@@ -103,8 +191,6 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-
 }
 .courses-cont h2{
     text-align: left;
@@ -137,6 +223,10 @@ body{
     justify-content: center;
     
 
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 .btn{
     padding: 12px 20px;
@@ -175,8 +265,7 @@ body{
     justify-content: space-between;
     padding: 50px 10%;
     gap: 50px;
-    background-color: var(--background-color);
-    
+    background-color: var(--background-color);  
 }
 .text{
     flex: 1;
@@ -201,7 +290,7 @@ body{
 }
 .learn{
     margin-top: auto;
-    width: 50%;
+    width: 45%;
 }
 .learn:hover{
     background-color: var(--primary-color);
@@ -333,7 +422,7 @@ body{
 .program-text a {
     text-decoration: none;
 
-    color: #00bfff;
+    color: white;
 
     font-weight: bold;
 
@@ -344,7 +433,7 @@ body{
 
 /* Hover Effect */
 .program-text a:hover {
-    color: #0077aa;
+    color: white;
 }
 /* 
    TABLET RESPONSIVE */

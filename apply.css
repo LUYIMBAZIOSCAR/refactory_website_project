@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:#f5f7fb;
+}
+
+/* =========================
+   APPLY SECTION
+========================= */
+
+.apply-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 8%;
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.form-container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+
+.form-image{
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(5,20,50,0.7),
+        rgba(5,20,50,0.7)
+    ),
+
+    url("images/image7.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    min-height:700px;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:50px;
+}
+
+/* Text */
+.image-text{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+}
+
+.image-text h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    line-height:1.3;
+}
+
+.image-text p{
+
+    line-height:1.8;
+
+    color:#ddd;
+}
+
+/* =========================
+   FORM CONTENT
+========================= */
+
+.form-content{
+
+    padding:60px;
+}
+
+.form-content h2{
+
+    font-size:42px;
+
+    color:#0a1f44;
+
+    margin-bottom:15px;
+}
+
+.form-content p{
+
+    color:#666;
+
+    margin-bottom:40px;
+}
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group{
+
+    margin-bottom:25px;
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#0a1f44;
+
+    font-weight:500;
+}
+
+/* Inputs */
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:0.3s ease;
+}
+
+/* Focus */
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#00bfff;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.submit-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    background:#00bfff;
+
+    color:white;
+
+    font-size:16px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+/* Hover */
+.submit-btn:hover{
+
+    background:#009acd;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:992px){
+
+    .form-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .form-image{
+
+        min-height:400px;
+    }
+}
+
+@media(max-width:768px){
+
+    .form-content{
+
+        padding:40px 25px;
+    }
+
+    .form-content h2{
+
+        font-size:32px;
+    }
+
+    .image-text h2{
+
+        font-size:32px;
+    }
+}

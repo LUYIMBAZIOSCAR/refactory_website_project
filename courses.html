@@ -6,6 +6,10 @@
     <title>Courses</title>
     
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     
 </head>
 <body>
@@ -18,7 +22,37 @@
         <div class="hamburger">&#9776;</div>
         <ul class="nav-links">
           <li><a href="">About Us</a></li>
-          <li><a href="">Courses</a></li>
+        <li class="dropdown">
+            <!-- Dropdown Link & Separate Trigger Arrow -->
+            <div class="dropdown-wrapper">
+              <a href="courses.html" class="dropdown-toggle-link">Courses</a>
+              <button
+                class="arrow-btn"
+                id="dropdownToggle"
+                aria-label="Toggle Dropdown"
+              >
+                <span class="arrow" id="arrow"> &#9662; </span>
+              </button>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <!-- Notice the 'courses.html' prefix added to the anchors -->
+              <li>
+                <a href="courses.html#foundational-courses"
+                  >Foundational Courses</a
+                >
+              </li>
+              <li>
+                <a href="courses.html#advanced-courses">Advanced Courses</a>
+              </li>
+              <li>
+                <a href="courses.html#apprenticeship-course"
+                  >Apprenticeship Course</a
+                >
+              </li>
+            </ul>
+          </li>
           <li><a href="">Finiancial Aid</a></li>
           <li><a href="">Tech Talent</a></li>
           <li><a href="">Partnerships</a></li>
@@ -39,7 +73,7 @@
             <p class="hero-subtitle">Enroll in a short course to gain in-demand technical & soft skills for work. <br> Our courses are designed for and in partnership with industry.</p>
         </div>
     </section>
-    <section class="programs-section">
+    <section class="programs-section" id="foundational-courses">
         <div class="section-title">
           <h4>Foundational Courses</h4>
         </div>
@@ -60,7 +94,7 @@
                 thrive in more advanced or specialized tech fields.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
 
@@ -78,7 +112,7 @@
                 mentorship from experienced developers.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html"  class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
 
@@ -96,11 +130,11 @@
                 software engineering roles.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html"  class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
     </section>
-    <section class="programs-section advanced">
+    <section class="programs-section advanced" id="advanced-courses">
         <div class="section-title ">
           <h4 style="color: white;">Advanced Courses</h4>
         </div>
@@ -121,7 +155,7 @@
                 and advanced skills in AI and ML.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a  href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
 
@@ -138,7 +172,7 @@
                 AWS Cloud and IT Fundamentals training.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
 
@@ -155,7 +189,7 @@
                 Launch your Blockchain career. Fast-Track Your Future.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a  href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
           <div class="program-card">
@@ -170,7 +204,7 @@
                 Launch Your Cybersecurity Career — Get Skilled, Get Paid, Get Ahead.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a  href="apply.html"  class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
           <div class="program-card">
@@ -186,7 +220,7 @@
                 visualize insights, to drive Smarter Business Decisions.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
           <div class="program-card">
@@ -202,7 +236,7 @@
                 prototype ideas, test experiences, and build usable products.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html"  class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
           <div class="program-card">
@@ -218,12 +252,12 @@
                 align teams, and deliver real-world impact.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a  href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
           
     </section>
-    <section class="programs-section">
+    <section class="programs-section" id="apprenticeship-course">
         <div class="section-title">
           <h4>Apprenticeship Course</h4>
         </div>
@@ -244,12 +278,12 @@
                 Experience as a Junior Developer.
               </p>
 
-              <button class="btn learn">Apply Now &#10132;</button>
+              <a href="apply.html" class="btn learn">Apply Now &#10132;</a>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="program-card " style="background-image: url('images/image11.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <div class="program-card " style="background-image: url('images/image9.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
             
             <div class="program-text" style="margin-top: 350px;">
               <h2 style="color: white;">Refactory Digital Solutions Catalogue</h2>
@@ -259,7 +293,7 @@
           </div>
 
           <!-- Card 3 -->
-           <div class="program-card " style="background-image: url('images/image11.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+           <div class="program-card " style="background-image: url('images/image3.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
             
             <div class="program-text" style="margin-top: 350px;">
               <h2 style="color: white;">Become an Industry Partner</h2>

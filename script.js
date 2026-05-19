@@ -35,3 +35,20 @@ hamburger.addEventListener('click',()=>{
 
 })
 
+// dropdown menu
+const dropdownToggle =
+    document.getElementById("dropdownToggle");
+
+const dropdownMenu =
+    document.getElementById("dropdownMenu");
+
+const arrow =document.getElementById("arrow");
+    
+
+    // Toggle Dropdown
+    dropdownToggle.addEventListener("click", () => {
+
+        dropdownMenu.classList.toggle("show");
+
+        arrow.classList.toggle("rotate");
+    })

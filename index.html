@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    
   </head>
   <body>
     <main>
@@ -22,7 +21,37 @@
         <div class="hamburger">&#9776;</div>
         <ul class="nav-links">
           <li><a href="">About Us</a></li>
-          <li><a href="courses.html">Courses</a></li>
+          <li class="dropdown">
+            <!-- Dropdown Link & Separate Trigger Arrow -->
+            <div class="dropdown-wrapper">
+              <a href="courses.html" class="dropdown-toggle-link">Courses</a>
+              <button
+                class="arrow-btn"
+                id="dropdownToggle"
+                aria-label="Toggle Dropdown"
+              >
+                <span class="arrow" id="arrow"> &#9662; </span>
+              </button>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu" id="dropdownMenu">
+              <!-- Notice the 'courses.html' prefix added to the anchors -->
+              <li>
+                <a href="courses.html#foundational-courses"
+                  >Foundational Courses</a
+                >
+              </li>
+              <li>
+                <a href="courses.html#advanced-courses">Advanced Courses</a>
+              </li>
+              <li>
+                <a href="courses.html#apprenticeship-course"
+                  >Apprenticeship Course</a
+                >
+              </li>
+            </ul>
+          </li>
           <li><a href="">Finiancial Aid</a></li>
           <li><a href="">Tech Talent</a></li>
           <li><a href="">Partnerships</a></li>
@@ -36,9 +65,9 @@
           <h2>Transforming Africa's tech talent for the future</h2>
           <h3>Tech programs by and for the tech industry</h3>
           <div class="hero-buttons">
-            <button class="btn primary">Partner with Us &#10132;</button>
-            <button class="btn">Explore programs &#10132;</button>
-            <button class="btn white">Hire Talent</button>
+            <a href="courses.html" class="btn primary">Partner with Us &#10132;</a>
+            <a href="courses.html" class="btn">Explore programs &#10132;</a>
+            <a href="courses.html" class="btn white">Hire Talent &#10132;</a>
           </div>
         </div>
       </section>
@@ -58,7 +87,7 @@
             the tech industry.
           </p>
 
-          <button class="btn learne">Learn More &#10132;</button>
+          <a href="courses.html" class="btn learne">Learn More &#10132;</a>
         </div>
         <div class="image">
           <img src="images/image5.jpg" alt="industry" srcset="" />
@@ -87,7 +116,7 @@
                 thrive in more advanced or specialized tech fields.
               </p>
 
-              <button class="btn learn">Learn More</button>
+              <a href="courses.html#foundational-courses" class="btn learn">Learn More</a>
             </div>
           </div>
 
@@ -105,7 +134,7 @@
                 mentorship from experienced developers.
               </p>
 
-              <button class="btn learn">Learn More</button>
+              <a href="courses.html#apprenticeship-course"  class="btn learn">Learn More</a>
             </div>
           </div>
 
@@ -123,7 +152,7 @@
                 software engineering roles.
               </p>
 
-              <button class="btn learn">Learn More</button>
+              <a href="courses.html#advanced-courses"  class="btn learn">Learn More</a>
             </div>
           </div>
         </div>
@@ -192,7 +221,7 @@
           </div>
 
           <!-- Button -->
-          <button class="btn learne">Learn more &rarr;</button>
+          <a href="courses.html" class="btn learne">Learn more &rarr;</a>
         </div>
 
         <!-- RIGHT SIDE -->
@@ -213,98 +242,80 @@
           </div>
 
           <!-- Button -->
-          <button class="btn learne">Learn More &rarr;</button>
+          <a href="courses.html" class="btn learne">Learn More &rarr;</a>
         </div>
       </section>
       <footer class="footer-section">
-
-    <div class="footer-container">
-
-        <!-- ABOUT -->
-        <div class="footer-column">
-
-            <img src="images/logo.png" alt="">
+        <div class="footer-container">
+          <!-- ABOUT -->
+          <div class="footer-column">
+            <img src="images/logo.png" alt="" />
 
             <p>
-                Refactory is a Tech skilling Academy. 
-                We are the industry’s blueprint for hiring software talent.
+              Refactory is a Tech skilling Academy. We are the industry’s
+              blueprint for hiring software talent.
             </p>
 
             <!-- Social Icons -->
             <div class="social-icons">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
 
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
 
-                <a href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
 
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
             </div>
+          </div>
 
-        </div>
-
-        <!-- RESOURCES -->
-        <div class="footer-column">
-
+          <!-- RESOURCES -->
+          <div class="footer-column">
             <h3>Resources</h3>
 
             <ul>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
+          </div>
 
-        </div>
-
-        <!-- GET IN TOUCH -->
-        <div class="footer-column">
-
+          <!-- GET IN TOUCH -->
+          <div class="footer-column">
             <h3>Get In Touch</h3>
 
             <ul>
-                <li>Email: info@refactory.ug</li>
-                <li>Phone: +256 700 000000</li>
-                <li>Support: support@refactory.ug</li>
+              <li>Email: info@refactory.ug</li>
+              <li>Phone: +256 700 000000</li>
+              <li>Support: support@refactory.ug</li>
             </ul>
+          </div>
 
-        </div>
-
-        <!-- VISIT US -->
-        <div class="footer-column">
-
+          <!-- VISIT US -->
+          <div class="footer-column">
             <h3>Visit Us</h3>
 
             <p>
-                Refactory Academy, 2nd Floor, 
-                Clarke International University. Kawagga Close off Kalungi Road, Muyenga
+              Refactory Academy, 2nd Floor, Clarke International University.
+              Kawagga Close off Kalungi Road, Muyenga
             </p>
-
+          </div>
         </div>
 
-    </div>
-
-    <!-- Bottom Footer -->
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Refactory Clone. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
+        <!-- Bottom Footer -->
+        <div class="footer-bottom">
+          <p>© 2026 Refactory Clone. All Rights Reserved.</p>
+        </div>
+      </footer>
     </main>
 
     <script src="script.js"></script>
